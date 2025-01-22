@@ -323,4 +323,24 @@ function upperFirst(element, index, array){
     array[index] = element.charAt(0).toUpperCase() + element.slice(1);
 }
 */
+/* .map
+const dates = ["2024-1-10", "2023-3-23", "2021-9-31"];
 
+function formatDate(element){
+    const parts = element.split("-");
+    return `${parts[1]}/${parts[2]}/${parts[0]}`;
+}
+
+const USDates = dates.map(formatDate);
+console.log(USDates);
+*/
+/* .filter
+const yaku = ["kiryu", "amon", "akiyama", "date", "tanimura"];
+
+function overFour(element){
+    return element.length > 4;
+}
+
+const yakuFour = yaku.filter(overFour);
+console.log(yakuFour);
+*/
