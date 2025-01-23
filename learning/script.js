@@ -340,6 +340,71 @@ const yaku = ["kiryu", "amon", "akiyama", "date", "tanimura"];
 function overFour(element){
     return element.length > 4;
 }
+/*.reduce
+const grades = [75, 99, 50, 34, 98, 82];
+
+const maxG = grades.reduce(getmax);
+
+function getmax(previous, next){
+    return Math.max(previous, next);
+}
+
+console.log(maxG);
+*/
+/* function expressions
+setTimeout(function(){
+    console.log("Hello");
+}, 3000);
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const squared = numbers.map(function(element){
+    return Math.pow(element, 2);
+});
+
+const isEven = numbers.filter(function(element){
+    return element % 2 === 0;
+});
+
+const total = numbers.reduce(function(previous, next){
+    return previous + next;
+});
+
+console.log(squared);
+console.log(isEven);
+console.log(total);
+*/
+/* arrow functions
+const wackNum = [22, 3, 91, 24, 4, 82, 69];
+
+const square = wackNum.map((element) => Math.pow(element, 2));
+const isOdd = wackNum.filter((element) =>  element % 2 !== 0);
+const total = wackNum.reduce((prev, next) => prev + next);
+
+console.log (square);
+console.log(isOdd);
+console.log(total);
+*/
+/* Objects
+const protag = {
+    firstName: "Akiyama",
+    lastName: "Shun",
+    age: 54,
+    isEmployed: true,
+    sayHello: function(){console.log(`Hello`)},
+}
+
+const protag2 = {
+    firstName: "Kiryu",
+    lastName: "Kazama",
+    age: 60,
+    isEmployed: false,
+    sayHello: function(){console.log(`R1 + Triangle`)},
+}
+
+console.log(protag.firstName)
+protag2.sayHello();
+*/
 
 const yakuFour = yaku.filter(overFour);
 console.log(yakuFour);
