@@ -405,6 +405,119 @@ const protag2 = {
 console.log(protag.firstName)
 protag2.sayHello();
 */
+/* this
+const yak1 = {
+    name: "Kiryu",
+    city: "Kamurocho",
+    sayName: function(){console.log(`I am ${this.name}`)},
+}
+
+const yak2 = {
+    name: "Majima",
+    city: "Sotenbori",
+    sayName: function(){console.log(`I am ${this.name}`)},
+}
+
+yak1.sayName();
+yak2.sayName();
+*/
+/* Constructor
+function Car(make, model, year, color){
+    this.make = make,
+    this.model = model,
+    this.year = year,
+    this.color = color
+}
+
+const car1 = new Car(`Honda`, `Accord`, 2003, `red`);
+
+console.log(`The first car is a ${car1.make} ${car1.model}`);
+*/
+/* Classes
+class Product{
+    constructor(name, price){
+        this.name = name;
+        this.price = price;
+    }
+    
+    displayProduct(){
+        console.log(`Product: ${this.name}`);
+        console.log(`Price: $${this.price.toFixed(2)}`);
+    }
+
+    calculateTotal(salesTax){
+        return this.price + (this.price * salesTax);
+    }
+}
+
+const salesTax = 0.05;
+
+const apple = new Product(`apple`, 4.99);
+const banana = new Product(`Banana`, 5.50)
+
+const total = apple.calculateTotal(salesTax);
+console.log(`Total price (with tax) is: $${total.toFixed(2)}`);
+*/
+/* Static (class owns anything static, not the object)
+class User{
+    static userCount = 0;
+    constructor(username){
+        this.username = username;
+        User.userCount++;
+    }
+    static getUserCount(){
+        console.log(`There are ${this.userCount} users online`);
+    }
+    sayHi(){
+        console.log(`My name is ${this.username}`);
+    }
+}
+
+const user1 = new User("Bob");
+const user2 = new User("Kaiser");
+
+user1.sayHi();
+console.log(user2.username);
+User.getUserCount();
+*/
+/* Inheritence
+class yak{
+    alive = true;
+
+    eat(){
+        console.log(`${this.name} is eating`);
+    }
+    sleep(){
+        console.log(`${this.name} is sleeping.`);
+    }
+}
+
+//extends keyword allows child class to inherit parent
+class Kiryu extends yak{
+    name = "Kiryu";
+
+    styles(){
+        console.log(`${this.name} has access to Legend and Agent styles`);
+    }
+}
+
+class Akimoto extends yak{
+    name = "Akimoto";
+
+    cant(){
+        console.log(`${this.name} is incapable of fighting`);
+    }
+}
+
+const kaz = new Kiryu();
+const eww = new Akimoto();
+
+kaz.eat();
+kaz.styles();
+
+eww.sleep();
+eww.cant();
+/*
 
 const yakuFour = yaku.filter(overFour);
 console.log(yakuFour);
