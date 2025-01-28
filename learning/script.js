@@ -522,3 +522,139 @@ eww.cant();
 const yakuFour = yaku.filter(overFour);
 console.log(yakuFour);
 */
+/* Super (references parent properties)
+class animal{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+
+    move(speed){
+        console.log(`The ${this.name} moves at a speed of ${speed}mph`);
+    }
+}
+
+class Lion extends animal{
+    constructor(name, age, runSpeed){
+        super(name, age);
+        this.runSpeed = runSpeed;
+    }
+
+    run(){
+        console.log(`${this.name} can run.`);
+        super.move(this.runSpeed);
+    }
+}
+
+class Fish extends animal{
+    constructor(name, age, swimSpeed){
+        super(name, age);
+        this.swimSpeed = swimSpeed;
+    }
+
+    swim(){
+        console.log(`${this.name} can swim.`);
+        super.move(this.swimSpeed);
+    }
+}
+
+class Bird extends animal{
+    constructor(name, age, flySpeed){
+        super(name, age);
+        this.flySpeed = flySpeed;
+    }
+
+    fly(){
+        console.log(`${this.name} can fly.`);
+        super.move(this.flySpeed);
+    }
+}
+
+const lion = new Lion("leo", 1, 25);
+const fish = new Fish("fishy", 2, 12);
+const hawk = new Bird("hawky", 3, 50);
+
+lion.run();
+fish.swim();
+hawk.fly();
+*/
+/* Getters & Setters
+class human{
+
+    constructor(firname, lasname, age){
+        this.firstname = firname;
+        this.lastname = lasname;
+        this.age = age;
+    }
+
+    set firstname(newFirstname){
+        if(typeof newFirstname === "string" && newFirstname.length > 0){
+            this._firstname = newFirstname;
+        }
+        else{
+            console.error("First name must be a name");
+        }
+    }
+
+    set lastname(newLastname){
+        if(typeof newLastname === "string" && newLastname.length > 0){
+            this._lastname = newLastname;
+        }
+        else{
+            console.error("Last name must be a name");
+        }
+    }
+
+    set age(newage){
+        if(typeof newage === "number" && newage > 0){
+            this._age = newage;
+        }
+        else if(newage < 0){
+            console.error("age cannot be less than 0");
+        }
+        else{
+            console.error("age must be a number");
+        }
+
+    }
+
+    get firstname(){
+        return this._firstname;
+    }
+
+    get lastname(){
+        return this._lastname;
+    }
+
+    get age(){
+        return this._age;
+    }
+}
+
+const person = new human(`Seth`, `Smith`, 99);
+
+console.log(person.firstname);
+console.log(person.lastname);
+console.log(person.age);
+*/
+/* Destructuring
+const colors = [`red`, `green`, `blue`, `black`];
+const [firColor, secColor, thiColor, ...extraColor] = colors;
+console.log(firColor);
+console.log(extraColor);
+
+
+const person1 = {
+    firName: "Jo",
+    lasName: "Amon",
+    age: 54,
+    job: "Assassin",
+}
+const person2 = {
+    firName: "Shin",
+    lasName: "Kamon",
+    age: 32,
+}
+const {firName, lasName, age, job = "Unemployed"} = person1;
+console.log(job);
+*/
