@@ -658,3 +658,62 @@ const person2 = {
 const {firName, lasName, age, job = "Unemployed"} = person1;
 console.log(job);
 */
+/* Nested Objects
+const person = {
+    fullName: "Joe Bob",
+    age: 30,
+    isStudent: true,
+    hobbies: [`fishing`, `eating`, `drawing`],
+    address: {
+        street: "124 my st.",
+        city: "Edison",
+        country: "america"
+    }
+}
+
+for(const property in person.address){
+    console.log(person.address[property]);
+}
+
+class people{
+    constructor(name, age, ...addRes){
+        this.name = name;
+        this.age = age;
+        this.address = new address(...addRes);
+    }
+}
+
+class address{
+    constructor(street, city, country){
+        this.street = street;
+        this.city = city;
+        this.country = country;
+    }
+}
+
+const person1 = new people("Spongebob", 30, "124 Conch St.", 
+                            "Bikini Bottom", "Int. Waters");
+const person2 = new people("Patrick", 28, "122 Conch St.", 
+                            "Bikini Bottom", "Int. Waters"); 
+const person3 = new people("Squidward", 40, "123 Conch St.", 
+                            "Bikini Bottom", "Int. Waters");
+
+console.log(person1.address.country);
+*/
+/* Object Arrays
+const veg = [{name: "cauliflower", color: "white", calories: 29}, 
+            {name: "pepper", color: "red", calories: 81}, 
+            {name: "eggplant", color: "purple", calories: 62}, 
+            {name: "mushroom", color: "brown", calories: 52}];
+
+veg.push({name: `lettuce`, color: `green`, calories: 88});
+
+const vegNames = veg.map(veg => veg.name);
+
+const loCal = veg.filter(veg => veg.calories <= 60);
+
+console.log(veg);
+veg.forEach(veg => console.log(veg.color));
+console.log(vegNames);
+console.log(loCal);
+*/
