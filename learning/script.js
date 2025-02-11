@@ -717,6 +717,18 @@ veg.forEach(veg => console.log(veg.color));
 console.log(vegNames);
 console.log(loCal);
 */
+/* sort()
+let num = [1, 10, 9, 2, 3, 7, 4, 5, 8, 6];
+num.sort((a, b) => b - a);
+
+const beat = [{name: "Lennon", age: 42},
+              {name: "McCartney", age: 43},
+              {name: "Ringo", age: 39}];
+beat.sort((a, b) => b.name.localeCompare(a.name));
+
+console.log(num);
+console.log(beat);
+*/
 /*Array Shuffling
 const cards = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10,'J', 'Q', 'K'];
 
@@ -745,4 +757,29 @@ console.log(year);
 console.log(month);
 console.log(day);
 console.log(date);
+*/
+/*Closure
+function createScorer(){ let score = 0;
+
+    function increScore(points){
+    score += points;
+    console.log(`+${points} pts`);
+    }
+
+    function decreScore(points){
+        score -= points;
+        console.log(`-${points} pts`);
+    }
+    
+    function getScore(){
+        return score;
+    }
+    return {increScore, decreScore, getScore};
+}
+
+const game = createScorer();
+
+game.increScore(29);
+game.decreScore(4);
+console.log(`Final Score: ${game.getScore()} pts`);
 */
