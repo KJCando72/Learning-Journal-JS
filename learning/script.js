@@ -783,3 +783,95 @@ game.increScore(29);
 game.decreScore(4);
 console.log(`Final Score: ${game.getScore()} pts`);
 */
+/* ***DIGITAL CLOCK
+function clockUpdate(){
+
+    const now = new Date();
+    const hr = now.getHours().toString().padStart(2, 0);
+    const min = now.getMinutes().toString().padStart(2, 0); 
+    const sec = now.getSeconds().toString().padStart(2, 0); 
+    const timeString = `${hr}:${min}:${sec}`;
+    document.getElementById(`clock`).textContent = timeString;
+}
+
+clockUpdate();
+setInterval(clockUpdate, 1000);
+*/
+/* ***STOPWATCH
+const display = document.getElementById(`time`);
+let timer = null;
+let startTime = 0;
+let elapsedTime = 0;
+let isRunning = false;
+
+function start(){
+    if(!isRunning){
+        startTime = Date.now() - elapsedTime;
+        timer = setInterval(update, 10);
+        isRunning = true;
+    }   
+    
+}
+
+
+
+function stop(){
+    if(isRunning = true){
+        clearInterval(timer);
+        elapsedTime = Date.now() - startTime;
+        isRunning = false;
+    }
+}
+
+function reset(){
+    clearInterval(timer);
+     startTime = 0;
+     elapsedTime = 0;
+     isRunning = false;
+
+    display.textContent = `00:00:00:00`;
+}
+
+function update(){
+    const currentTime = Date.now();
+    elapsedTime = currentTime - startTime;
+    let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+    let min = Math.floor(elapsedTime / (1000 * 60) % 60);
+    let sec = Math.floor(elapsedTime / (1000) % 60);
+    let milisec = Math.floor(elapsedTime % 1000 / 10);
+
+    hours = String(hours).toString().padStart(2, 0);
+    min = String(min).toString().padStart(2, 0);
+    sec = String(sec).toString().padStart(2, 0);
+    milisec = String(milisec).toString().padStart(2, 0);
+
+    display.textContent = `${hours}:${min}:${sec}:${milisec}`;
+}
+*/
+/* E6 Modules
+import{PI, getArea, getCircum, getSurfaceVolume} from './mathUtil.js';
+
+const area = getArea(3);
+const circum = getCircum(3);
+const vol = getSurfaceVolume(3);
+
+console.log(getArea(3));
+console.log(getCircum(3));
+console.log(getSurfaceVolume(3));
+
+console.log(`${area} cm`);
+console.log(`${circum} cm2`);
+console.log(`${vol} cm3`);
+*/
+/* Asynchronous Functions
+function func1(callback){
+    setTimeout(() => {console.log("Task 1"); callback()}, 3000);
+}
+
+function func2(){
+    console.log("task 2");
+    console.log("task 3");
+}
+
+func1(func2); //makes it so func2 won't activate without func1
+*/
