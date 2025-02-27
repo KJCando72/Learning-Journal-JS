@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1 id = "theh1"></h1>
-<script type = "module" src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
 
@@ -47,10 +47,54 @@
 -->
 <!--Stopwatch
 <h1>Stopwatch</h1>
+// REQUIRES TXT "type = "module"" after script to function
 <div id="time">00:00:00:00</div>
 <div id = "buttons">
   <button id = "start" onclick="start()">Start</button>
   <button id = "stop" onclick="stop()">Stop</button>
   <button id = "reset" onclick="reset()">Reset</button>
 </div>
+-->
+
+<!-- Calculator
+<div id = "calc">
+  <input id = "display" readonly>
+  <div id = "buttons">
+    <button onclick = "appendToDisplay(`+`)" class = "operator">+</button>
+    <button onclick = "appendToDisplay(`7`)">7</button>
+    <button onclick = "appendToDisplay(`8`)">8</button>
+    <button onclick = "appendToDisplay(`9`)">9</button>
+    <button onclick = "appendToDisplay(`-`)" class = "operator">-</button>
+    <button onclick = "appendToDisplay(`4`)">4</button>
+    <button onclick = "appendToDisplay(`5`)">5</button>
+    <button onclick = "appendToDisplay(`6`)">6</button>
+    <button onclick = "appendToDisplay(`*`)" class = "operator">*</button>
+    <button onclick = "appendToDisplay(`1`)">1</button>
+    <button onclick = "appendToDisplay(`2`)">2</button>
+    <button onclick = "appendToDisplay(`3`)">3</button>
+    <button onclick = "appendToDisplay(`/`)" class = "operator">/</button>
+    <button onclick = "appendToDisplay(`0`)">0</button>
+    <button onclick = "appendToDisplay(`.`)">.</button>
+    <button onclick = "calculate()">=</button>
+    <button onclick = "clearDisplay()" class = "operator">C</button>
+  </div>
+</div>
+-->
+<!--Element Selectors
+<h1 id = "head">Food</h1>
+<div class = "fruits">banana</div>>
+<div class = "fruits">orange</div>>
+<div class = "fruits">melon</div>>
+<h4> Hamburg</h4>
+<ul>
+    <li>cheese</li>
+    <li>tomato</li>
+    <li>lettuce</li>
+</ul>>
+<h4> hot dog</h4>
+<ul>
+    <li>meat</li>
+    <li>bun</li>
+    <li>ketchup</li>
+</ul>>
 -->
