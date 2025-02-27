@@ -875,3 +875,90 @@ function func2(){
 
 func1(func2); //makes it so func2 won't activate without func1
 */
+/*Error catching
+try{
+    const dividend = Number(window.prompt("Enter top number: "));
+    const divisor = Number(window.prompt("Enter bottom number: "));
+
+    if(divisor == 0){
+        throw new Error(`Can't divide by 0`);
+    }
+
+    if(isNaN(dividend) || isNaN(divisor)){
+        throw new Error(`Not a number, try again`);
+    }
+
+    const result = dividend / divisor;
+    console.log(result);
+}
+catch(error){
+    console.error(error);
+}
+
+console.log(`The End`);
+*/
+/* ** CALCULATOR
+const display = document.getElementById("display");
+
+function appendToDisplay(input){
+    display.value += input;
+}
+
+function calculate(){
+    try{
+        display.value = eval(display.value);
+    }
+    catch(error){
+        display.value = "ERROR";        
+    }
+}
+function clearDisplay(){
+    display.value = "";
+}
+*/
+/* DOM intro
+document.title = "unicorns";
+
+document.body.style.backgroundColor = "yellow";
+
+console.dir(document);
+
+const username = "kc";
+const WelcomeMsg = document.getElementById("Hi");
+
+WelcomeMsg.textContent += username === "" ? 'Guest' : username;
+*/
+/* element selectors
+const heading = document.getElementById("head"); //returns element or null
+heading.style.backgroundColor = "yellow";
+heading.style.textAlign = "center";
+console.log(head);
+
+const fruits = document.getElementsByClassName("fruits"); //for html elements that share same id
+for(let fruit of fruits){
+    fruit.style.backgroundColor = "pink";
+}
+Array.from(fruits).forEach(fruit => { //same thing as 930-933, but array functions to be used on html elements
+    fruit.style.backgroundColor = "pink";
+});
+
+const h4ele = document.getElementsByTagName("h4");
+const listed = document.getElementsByTagName("li");
+console.log(h4ele);
+for(let h4e of h4ele){
+    h4e.style.backgroundColor = "cyan";
+}
+Array.from(listed).forEach(list => {
+    list.style.color = "red";
+});
+
+const element = document.querySelector(".fruits"); //only returns first match
+element.style.color = "cyan"; 
+console.log(element);
+
+ const ingredients = document.querySelectorAll("li");
+ingredients.forEach(ingred => {
+    ingred.style.textAlign = "center";
+});
+console.log(ingredients);
+*/
