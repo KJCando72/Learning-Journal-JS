@@ -962,3 +962,34 @@ ingredients.forEach(ingred => {
 });
 console.log(ingredients);
 */
+/* DOM Navigation
+const ulElements = document.querySelectorAll("ul");
+ulElements.forEach(ulElements => {
+    const firstChild = ulElements.firstElementChild;
+    firstChild.style.backgroundColor = "yellow";
+    
+    const lastChild = ulElements.lastElementChild;
+    lastChild.style.backgroundColor = "pink";
+});
+
+//if ul is selected, entire list gets affected
+const sibl = document.getElementById("burger"); 
+const nxtSibl = sibl.nextElementSibling;
+nxtSibl.style.backgroundColor = "turquoise";
+
+const lon = document.getElementById("london");
+const prevLon = lon.previousElementSibling;
+prevLon.style.backgroundColor = "blue";
+
+//selects entire list
+const peop = document.getElementById("jo");
+const ppl = peop.parentElement;
+ppl.style.color = "red";
+
+//.children selects all child elements 
+const chil = document.getElementById("place");
+const children = chil.children;
+Array.from(children).forEach(child => {
+    child.style.color = "green";
+})
+*/
