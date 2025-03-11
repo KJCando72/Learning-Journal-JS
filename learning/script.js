@@ -993,3 +993,49 @@ Array.from(children).forEach(child => {
     child.style.color = "green";
 })
 */
+/*Add or Delete HTML 
+//.createElement makes a new html element
+const newH1 = document.createElement("h1");
+const b2 = document.getElementById("box2");
+
+newH1.textContent = "Pizza Cake";
+newH1.id = "myh1";
+
+//appends or adds element into html
+document.body.append(newH1);
+//if you want to append to one of the boxes
+document.getElementById("box1").append(newH1);
+//inserts first element before second element
+document.body.insertBefore(newH1, b2);
+//.removeChild removes element inside ()
+document.body.removeChild(newh1);
+*/
+/*Event Listeners & Mouse Events
+const box = document.getElementById("mybox");
+const btn = document.getElementById("but")
+
+box.addEventListener("click", event => {
+    event.target.style.backgroundColor = "red"
+    event.target.textContent = "stop clicking me ;(";
+});
+
+box.addEventListener("mouseover", event => {
+    event.target.style.backgroundColor = "yellow"
+    event.target.textContent = "ur about to click me? :D";
+});
+
+box.addEventListener("mouseout", event => {
+    event.target.style.backgroundColor = "green"
+    event.target.textContent = "Click me ;)";
+});
+
+btn.addEventListener("click", event => {
+    box.style.backgroundColor = "red"
+    box.textContent = "stop clicking me ;(";
+});
+
+btn.addEventListener("mouseover", event => {
+    box.style.backgroundColor = "yellow"
+    box.textContent = "ur about to click me? :D";
+});
+*/
