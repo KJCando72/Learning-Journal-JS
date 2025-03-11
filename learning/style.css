@@ -1,38 +1,132 @@
-#countLab {
-    font-size: 10em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    display: block;
+/*Stopwatch
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(XCyQoFd.jpg);
+    background-position: center;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: monospace;
 }
 
-#btnBunch {
-    display: block;
-    text-align: center;
+h1{
+    color: beige;
+    font-size: 400%;
 }
 
-.buttons {
+#time{
+    color:aliceblue;
+    font-size: 400%;
+    border: 5px solid;
+    border-radius: 50px;
+    border-color: blanchedalmond;
+    margin: 5px;
+    padding: 5%;
+    backdrop-filter: blur(5px);
+}
+
+#buttons button{
+    font-size: 1rem;
+    font-weight: bold;
     padding: 10px 20px;
-    font-size: 1.5em;
-    background-color: rgb(229, 83, 83);
-    border-radius: 10px;
+    margin: 5px;
+    min-width: 5px;
     cursor: pointer;
-    transition: background-color 0.25s;
+    color: antiquewhite;
 }
 
-.buttons:hover {
-    background-color:rgb(160, 60, 60);
+#start{
+    background-color: green;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 1.5em;
-    background-color: rgb(229, 83, 83);
-    border-radius: 10px;
+#stop{
+    background-color: red;
+}
+
+#reset{
+    background-color: black;
+}
+*/
+/* Calculator
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calc{
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(97, 41, 69);
+    margin: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#display{
+    width: 100%;
+    padding: 25px;
+    font-size: 50px;
+    border: none;
+    background-color: rgb(143, 60, 101);
+    color: white;
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button:hover{
+    background-color: rgb(119, 119, 119);
+}
+
+button:active{
+    background-color: rgb(190, 190, 190);
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(94, 93, 93);
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
     cursor: pointer;
-    transition: background-color 0.25s;
 }
 
-button:hover {
-    background-color:rgb(160, 60, 60);
+.operator{
+    background-color: rgb(170, 111, 0);
 }
 
+.operator:hover{
+    background-color: rgb(201, 132, 3); 
+}
+
+.operator:active{
+    background-color: rgb(214, 141, 4);
+}
+*/
+/* Add or Delete HTML
+.box{
+    border: 3px solid;
+    width: 100%;
+    height: 125px;
+}
+*/
+/*Mouse Events
+#mybox{
+    background-color: green;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+}
+*/
