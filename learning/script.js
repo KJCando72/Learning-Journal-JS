@@ -1039,3 +1039,78 @@ btn.addEventListener("mouseover", event => {
     box.textContent = "ur about to click me? :D";
 });
 */
+/*Key Events
+const box = document.getElementById("mybox");
+const moved = 10;
+let x = 0;
+let y = 0;
+
+document.addEventListener("keydown", event => {
+    console.log(`key down = ${event.key}`);
+    box.textContent = "LET GO D:<";
+    box.style.backgroundColor = "red";
+    
+    //switch that allows box to be moved whenever the arrow keys are pressed
+    
+    if (event.key.startsWith("Arrow")){    
+        
+        switch(event.key){
+            case "ArrowUp":
+                y -= moved;
+                break;
+            case "ArrowDown":
+                y += moved;
+                break;
+            case "ArrowLeft":
+                x -= moved;
+                break;
+            case "ArrowRight":
+                x += moved;
+                break;
+        }
+    box.style.top = `${y}px`;
+    box.style.left = `${x}px`;
+    }
+
+});
+document.addEventListener("keyup", event => {
+    console.log(`key up = ${event.key}`);
+    box.textContent = "Press a key ;)";
+    box.style.backgroundColor = "green";
+});
+*/
+/*Show & Hide HTML
+const mybutton = document.getElementById("hideIt");
+const invis = document.getElementById("another");
+const image = document.getElementById("space");
+
+mybutton.addEventListener("click", event =>{
+
+    //.style.display allows image to either be hidden (none) or shown (block)
+    
+    if(image.style.display === "none"){
+        image.style.display = "block";
+        mybutton.textContent = "hide";
+    }
+    else {
+        image.style.display = "none";
+        mybutton.textContent = "show";    
+    }
+
+});
+
+invis.addEventListener("click", event =>{
+
+    //.style.visibility keeps position and size of image before hiding it, preventing anything from being moved
+    
+    if(image.style.visibility === "hidden"){
+        image.style.visibility = "visible";
+        invis.textContent = "invisible";
+    }
+    else {
+        image.style.visibility = "hidden";
+        invis.textContent = "visible";    
+    }
+
+});
+*/
