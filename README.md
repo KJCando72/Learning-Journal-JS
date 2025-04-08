@@ -7,5 +7,5 @@ This is a learning journal that serves to include all the code that I will be in
 The contents of this learning journal is most of the topics covered in the 12 hr video, with some omittted due to already existing knowledge of said subject with me. The rest of these sections will mostly be contained in the script.js file, where every new section learned is made into a comment. There may be some sections in the index.html file too, but most of the learning will be in the script.js file.
 
 # DISCLAIMER
--Certain lines of code require the usage of images. In order to test the code for yourself for these instances, simply replace the line with another image of your choosing.
+- Certain lines of code require the usage of images. In order to test the code for yourself for these instances, simply replace the line with another image of your choosing.
 - This is not a 1-1 copy of the code, certain sections and strands of code may be omitted
