@@ -1114,6 +1114,50 @@ invis.addEventListener("click", event =>{
 
 });
 */
+/*Node List
+//for elements in .querySelectorALl, put quotations and css specifying for selection
+let buttons = document.querySelectorAll(".mybutton");
+
+buttons.forEach(press =>{
+    press.addEventListener("click", event =>  {
+        event.target.style.backgroundColor = "green";
+        event.target.textContent += ` :)`;    
+    });
+    
+    press.addEventListener("mouseover", event =>{
+        event.target.style.backgroundColor = "red";
+        event.target.textContent = `CLICK`;
+    });
+
+    press.addEventListener("mouseout", event =>{
+        event.target.style.backgroundColor = "white";
+        event.target.textContent = `Button`;
+    });
+}); 
+
+//adds new button 'newb' to list, but isn't considered a part of it 
+//due to querySelectorALl being static, and due to that
+//won't inherit event listeners 
+const newb = document.createElement("button"); 
+newb.textContent = "button 5";
+//code allows it to inherit properties of other buttons in mybutton
+newb.classList = "mybutton";
+document.body.appendChild(newb);
+//adds newb to mybutton list
+buttons = document.querySelectorAll(".mybutton");
+
+console.log(buttons);
+
+buttons.forEach(button =>{
+    button.addEventListener("click", event =>{
+        event.target.remove();
+        //allows query list to be updated to account for
+        //removed buttons
+        buttons = document.querySelectorAll(".mybutton");
+        console.log(buttons);
+    });
+});
+*/
 /* Class List
 const mybutton = document.getElementById("mybutton");
 //classList.add or classList.remove add or take out css classes
