@@ -133,3 +133,33 @@ button{
     position: relative;
 }
 */
+/*Node List
+.mybutton {
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: yellow;
+}
+*/
+/* Class Lists
+#mybutton {
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.enabled{
+    background-color: rgb(0, 0, 255);
+    color: rgb(218, 112, 214);
+}
+
+.hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.disabled{
+    background-color: rgb(255, 255, 255);
+}
+*/
