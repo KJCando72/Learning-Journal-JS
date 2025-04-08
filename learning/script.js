@@ -1114,3 +1114,29 @@ invis.addEventListener("click", event =>{
 
 });
 */
+/* Class List
+const mybutton = document.getElementById("mybutton");
+//classList.add or classList.remove add or take out css classes
+mybutton.classList.add("enabled");
+
+mybutton.addEventListener("mouseover", event =>{
+    mybutton.classList.toggle("hover");
+});
+
+mybutton.addEventListener("mouseout", event =>{
+    mybutton.classList.toggle("hover");
+});
+
+mybutton.addEventListener("click", event =>{
+
+    //classList.contains checks if css class is used, returns true
+    //if it is, false if not
+    if(event.target.classList.contains("disabled")){
+        event.target.textContent += ` :)`;
+    }
+    else{
+        mybutton.classList.replace("enabled", "disabled");
+    }
+  
+});
+*/
