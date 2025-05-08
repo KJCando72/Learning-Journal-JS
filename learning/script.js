@@ -1184,3 +1184,100 @@ mybutton.addEventListener("click", event =>{
   
 });
 */
+/* ***ROCK PAPER SCISSORS
+const choices = ["rock", "paper", "scissors"];
+const player = document.getElementById("player");
+const cpu = document.getElementById("enemy");
+const result = document.getElementById("result");
+const playerScore = document.getElementById("playScore");
+const enemyScore = document.getElementById("enemScore");
+
+i = 0;
+o = 0;
+
+function start(playerchoice){
+
+    const cpuchoice = choices[Math.floor(Math.random() * 3)];
+    let res = "";
+
+    if (playerchoice === cpuchoice){
+        res = "TIE";
+    }
+    else{
+        switch(playerchoice){
+            case "rock":
+                res = (cpuchoice === "scissors") ? "YOU WIN" : "YOU LOSE";    
+            break;
+            case "scissors":
+                res = (cpuchoice === "paper") ? "YOU WIN" : "YOU LOSE";    
+            break;
+        
+             case "paper":
+                res = (cpuchoice === "rock") ? "YOU WIN" : "YOU LOSE";    
+            break;
+        }
+    }
+    player.textContent = `PLAYER CHOSE: ${playerchoice}`;
+    cpu.textContent = `COMPUTER CHOSE: ${cpuchoice}`;
+    result.textContent = `${res}`;
+
+    result.classList.remove("green", "red");
+
+    switch(res){
+        case "YOU WIN":
+            result.classList.add("green");
+            playerScore.textContent = `YOUR SCORE: ${i++}`;
+        break;
+        case "YOU LOSE":
+            result.classList.add("red");
+            enemyScore.textContent = `CPU SCORE: ${o++}`;
+        break;
+    }
+} 
+*/
+/*Image Slider
+const slides = document.querySelectorAll(".slides img");
+let slideIn = 0;
+let intervalID = null;
+
+//Waits for all the DOM content to load
+//then initializes the slider function
+document.addEventListener("DOMContentLoaded",initializeSlider);
+
+function initializeSlider(){
+//if statement checks if there are any images stored
+//if not, then intializeSlider doesn't activate
+    if(slides.length > 0){
+        slides[slideIn].classList.add("displayslide");
+//allows interval to be used that can be cleared for later
+        intervalID = setInterval(next, 5000);
+    }
+}
+
+function showSlide(index){
+
+//if statement keeps slider from going over or
+//under the array length limit
+    if (index >= slides.length){
+        slideIn = 0;
+    }
+    else if (index < 0){
+        slideIn = slides.length - 1;
+    }
+
+    slides.forEach(slide => {
+        slide.classList.remove("displayslide");
+    });
+    slides[slideIn].classList.add("displayslide");
+}
+
+function prev(){
+    slideIn--;
+    showSlide(slideIn);
+}
+
+function next(){
+    slideIn++;
+    showSlide(slideIn);
+}
+*/
