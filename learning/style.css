@@ -163,3 +163,74 @@ button{
     background-color: rgb(255, 255, 255);
 }
 */
+/*Rock Paper Scissors
+body{
+    background-color: rgb(181, 176, 169);
+}
+
+#signs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: rgb(146, 0, 146);
+    font-size: 450%;
+    margin: 0 10px;
+    padding: 50px;
+    cursor: pointer;
+    border-radius: 250px;
+}
+
+button:hover{
+    background-color: rgb(102, 1, 102);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 400%;
+    font-weight: bold;
+}
+
+#result{
+    text-align: center;
+    font-size: 250%;
+}
+
+#bottom{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 200%;
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+
+
+.red{
+    color: red;
+}
+
+.green{
+    color: greenyellow;
+}
+*/
+/*Image Slider
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    display: none;
+}
+
+img.displayslide{
+    display:block;
+}
+*/
